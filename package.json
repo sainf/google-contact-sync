@@ -1,0 +1,23 @@
+{
+  "name": "google-contact-sync",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "bun run src/cli.ts sync",
+    "restore": "bun run src/cli.ts restore",
+    "build:linux": "mkdir -p dist/linux && bun build src/cli.ts --compile --outfile dist/linux/google-contact-sync && cp conf/ dist/linux/ -r",
+    "fmt": "bunx prettier -w .",
+    "typecheck": "bunx tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "env-paths": "^3.0.0",
+    "googleapis": "^134.0.0",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.6",
+    "prettier": "^3.3.3",
+    "typescript": "^5.7.3"
+  }
+}

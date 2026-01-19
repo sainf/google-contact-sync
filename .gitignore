@@ -1,0 +1,30 @@
+# Node / Bun
+node_modules/
+.bun/
+
+# Logs
+log.txt
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Secrets / local config
+conf/token*
+conf/config*
+conf/*token*
+conf/keyfile*.json
+conf/backups/
+
+# Keep config trackable by default
+# (uncomment if you prefer local-only config)
+# conf/config.json
+
+# Optional: ignore local config file (uncomment if desired)
+# conf/config.ini
+
+# Build outputs
+/dist/
+/build/
+/out/
